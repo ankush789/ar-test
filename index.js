@@ -1,7 +1,6 @@
 const button = document.querySelector('#button');
-console.log('working');
+
 button.addEventListener('click', () => {
-  console.log('clicked');
   console.log(navigator);
   navigator.bluetooth
     .requestDevice({ filters: [{ services: ['battery_service'] }] })
